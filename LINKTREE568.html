@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MDM Engineering and Technologies</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(90deg, rgba(255,255,255,0.2) 1px, transparent 1px),
+    linear-gradient(180deg, #e6e6e6, #bfbfbf, #e6e6e6);
+      overflow: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, rgba(255,255,255,0.15) 1px, transparent 1px),
+    linear-gradient(180deg, #e6e6e6, #bfbfbf, #e6e6e6);
+
+      background-size: 800% 80%;
+      animation: gradientBG 15s ease infinite;
+      z-index: -1;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 800% 800%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 40px 20px;
+      border-radius: 20px;
+      backdrop-filter: blur(15px);
+      max-width: 400px;
+      width: 90%;
+    }
+
+    /* Logo in full rectangular ratio */
+    .logo {
+      width: 100%;
+      max-width: 300px; /* adjust as needed */
+      margin: 0 auto 20px;
+    }
+
+    .logo img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    /* MD Profile Photo */
+    .md-photo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto 15px;
+      border: 3px solid #fff;
+    }
+
+    .md-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .md-name {
+  color: #000000;
+  font-weight: 800;   /* stronger bold */
+}
+
+
+    .links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: #fff; /* white text */
+      background: rgba(255, 255, 255, 0.2); /* glass button */
+      margin: 10px 0;
+      padding: 12px 20px;
+      border-radius: 12px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .links a:hover {
+      background: rgba(255, 255, 255, 0.4);
+      transform: scale(1.05);
+    }
+
+    /* Icon colors only */
+    .links a.instagram i { color: #E1306C; }
+    .links a.facebook i { color: #1877F2; }
+    .links a.linkedin i { color: #0A66C2; }
+    .links a.youtube i { color: #FF0000; }
+    .links a.phone i { color: #25D366; }
+    .links a.email i { color: #FF8C00; }
+
+    .links a i {
+      margin-right: 10px;
+      font-size: 1.2rem;
+    }
+
+    @media(min-width: 768px) {
+      .container {
+        max-width: 500px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Company Logo -->
+    <div class="logo">
+      <img src="https://www.mdmtech.in/images/logo.png" alt="MDM Logo">
+    </div>
+     <div class="company-quote">
+  Engineering Excellence in Sheet Metal Innovation
+</div>
+   <!-- MD Profile Section -->
+<div class="md-card">
+
+  <div class="md-photo">
+  <img src="https://media.licdn.com/dms/image/v2/C4D03AQH4nwvs09cIlA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1622890321229?e=1772668800&v=beta&t=rDh1ns5cSy5uVTkTMqs-nHNsxEgRZY_Uim34hWxm6U8" alt="Managing Director Photo">
+  </div>
+
+ <div class="md-title">Managing Director</div>
+<div class="md-name">Mr.Baskar Dakshinamurthy</div>
+
+
+</div>
+
+
+
+    <!-- Links -->
+    <div class="links">
+      <a class="instagram" href="https://www.instagram.com/mdm_engineering_tech?igsh=eHB5cml1NG5wMDBy" target="_blank">
+        <i class="fab fa-instagram"></i>Instagram
+      </a>
+      <a class="facebook" href="https://www.facebook.com/profile.php?id=61557572132812" target="_blank">
+        <i class="fab fa-facebook-f"></i>Facebook
+      </a>
+      <a class="linkedin" href="https://in.linkedin.com/in/mdm-engineering-and-technologies-25235532?utm_source=share&utm_medium=member_mweb&utm_campaign=share_via&utm_content=profile" target="_blank">
+        <i class="fab fa-linkedin-in"></i>LinkedIn
+      </a>
+      <a class="youtube" href="https://youtube.com/@mdmengineeringandtechnolog3659?si=ToZHr-R_4y79ysDh" target="_blank">
+        <i class="fab fa-youtube"></i>YouTube
+      </a>
+      <a class="phone" href="tel:+919840184858">
+        <i class="fas fa-phone"></i>+91 98401 84858
+      </a>
+      <a class="email" href="mailto:sales@mdmtech.in">
+        <i class="fas fa-envelope"></i>sales@mdmtech.in
+      </a>
+    </div>
+  </div>
+</body>
+</html>
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <title>Untitled</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
